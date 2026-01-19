@@ -12,7 +12,7 @@ def fib(n):
 def fib_rek(n):
 
     if n > 2:
-        f = fib(n-1) + fib(n-2)
+        f = fib_rek(n-1) + fib_rek(n-2)
     elif n == 0:
         return 0
     else:
